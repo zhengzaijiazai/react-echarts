@@ -1,0 +1,24 @@
+.homeRender{
+    width: 100%;
+    margin: 25px;
+    .homeRender_title{
+        width: fit-content;
+    }
+    .homeRender_list{
+        padding: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4,1fr);
+        .homeRender_list_button{
+            width: 100%;
+            padding: 20px 0;
+            background-color: #e5e5e5;
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+            &:hover{
+                background-color: #80ff02; 
+            }
+        }
+    }
+}
