@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosResponse, AxiosRequestConfig } from "axios"
 
 const request: AxiosInstance = axios.create({
-    baseURL: "http://localhost:5000/",
+    baseURL: process.env.REACT_APP_BASE_URL,
     timeout: 5000
 })
 

@@ -1,0 +1,43 @@
+@keyframes rowup{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(0,-51vh,0);
+    }
+}
+
+.centerList{
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    padding: 5px;
+    overflow: hidden;
+
+    .centerList_title{
+        font-size: 20px;
+        padding: 5px;
+        color: rgb(16, 16, 101);
+        text-indent: 1em;
+        text-shadow: 0px 0px 5px rgb(0,0,0);
+    }
+    .centerList_list{
+        display: flex;
+        overflow: hidden;
+        .centerList_list_1,.centerList_list_2{
+            width: 50%;
+            display: grid;
+            place-content: center;
+            gap: 5px;
+            .centerList_list_div{
+                width: 100%;
+                height: 4.5vh;
+            }
+        }
+        // 动画类
+        .centerList_list_active{
+            animation: rowup 15s 2s linear infinite;
+
+        }
+    }
+}

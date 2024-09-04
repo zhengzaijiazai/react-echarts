@@ -1,0 +1,29 @@
+.dp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./image/dpbg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    box-sizing: border-box;
+    .dp_content_box{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        .dp_content_box_left,.dp_content_box_right{
+            width: 25%;
+            height: 100%;
+            background-color: blue;
+        }
+        .dp_content_box_center{
+            width: 50%;
+            height: 100%;
+            background-color: red;
+        }
+    }
+}

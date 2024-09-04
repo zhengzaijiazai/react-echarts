@@ -30,9 +30,14 @@ const Index = () => {
           path: "redux",
         },
         {
-          id: 2,
+          id: 3,
           name: "form表单",
           path: "form",
+        },
+        {
+          id: 4,
+          name: "大屏",
+          path: "dp",
         },
       ],
       title: "学习内容区域",
@@ -91,6 +96,14 @@ const Index = () => {
       <Title title="首页" />
       <PageRender {...data} />
       <PageRender {...data1} />
+      <div className="description">
+        <a href="https://beian.miit.gov.cn/" target="_blank">
+          您的备案号
+        </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">
+          蜀ICP备2024090347号-1
+        </a>
+      </div>
     </div>
   );
 };
